@@ -1,9 +1,11 @@
 # ESP32CAM_MQTT-Basic
+[Actualizado el 9-Ago-2022 por [Emiliano Flores](https://github.com/EmilianoVela)]
+
 Este repositorio contiene el programa básico para conectar el ESP32CAM a MQTT, enviar y recibir mensajes.
 
 Puedes encontrar el curso correspondiente a este ejercicio en el siguiente enlace.
-
 https://edu.codigoiot.com/
+
 
 ### Requisitos
 Para que el código de este repositorio funcione, es necesario contar con lo siguiente:
@@ -30,17 +32,15 @@ https://edu.codigoiot.com/course/view.php?id=818
 Para configurar correctamente NodeRed puedes consultar el siguiente enlace.
 
 https://edu.codigoiot.com/course/view.php?id=817
-
+  
 Puedes obtener la biblioteca PubSubClient desde el siguiente enlace.
-
 https://github.com/knolleary/pubsubclient
 
-El flow de NodeRed lee en el tema `esp32/data` y publica en el tema `esp32/output`, por lo que deberás configurar los nodos MQTT para conectarse a estos temas y al broker de tu elección.
+El flow de NodeRed lee en el tema `codigoIoT/ejemplo/mqtt` y publica en el tema `codigoIoT/ejemplo/archivomqttin`, por lo que deberás configurar los nodos MQTT para conectarse a estos temas y al broker de tu elección.
 
 Los nodos switch y text de la sección dashboard deberán tener correctamente configurados el tab y group en el que se visualizarán.
 
 ### Funcionamiento
-
 Para observar el funcionamiento de este proyecto deberás realizar lo siguiente.
 
 1. Carga el flow MQTT+ESP32CAM-Basic.json en NodeRed.
@@ -48,8 +48,8 @@ Para observar el funcionamiento de este proyecto deberás realizar lo siguiente.
 3. Carga el programa ES2CAM_MQTT-Basic.ino en el ESP32CAM.
 4. Visita el dashboard de NodeRed
 
+  
 ![](https://github.com/codigo-iot/ESP32CAM_MQTT-Basic/blob/main/esp32camMQTTbasic.jpg)
 
-Podrás observar una cuenta progresiva, la cual envía el prográma base del ESP32CAM. Puedes controlar el led flash del ESP32CAM con el switch del dashboard.
 
-Por: [Hugo Vargas](https://github.com/hugoescalpelo)
+Podrás observar una cuenta progresiva, la cual envía el prográma base del ESP32CAM. Puedes controlar el led flash del ESP32CAM con el switch del dashboard.
